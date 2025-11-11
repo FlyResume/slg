@@ -14,6 +14,11 @@ public enum E_EventType
     E_Test2,
     E_SetResource,
     //生命周期事件
+    //upinit 主界面
+    //preinit 预加载
+    //active 游戏中
+    //pause 暂停
+    //shutdown 关闭
     E_UpInitEnter,
     E_UpInitUpdate,
     E_UpInitFixedUpdate,
