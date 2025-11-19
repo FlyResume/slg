@@ -19,5 +19,14 @@ namespace QZGFramework
                 // }
             };
         }
+        public void LoadMaterial(string name, GameObject obj)
+        {
+            Addressables.LoadAssetAsync<Material>(name).Completed += (a) =>
+            {
+
+                obj.GetComponent<SpriteRenderer>().material = a.Result;
+            };
+            
+        }
     }
 }
