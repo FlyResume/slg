@@ -14,19 +14,27 @@ public class CharacterBase : MonoBehaviour
     [SerializeField]
     private float attack;
     public float Attack { get { return attack; } }
-    [SerializeField]
-    private float magicAttack;
-    public float MagicAttack { get { return magicAttack; } }
+    //[SerializeField]
+    // private float magicAttack;
+    // public float MagicAttack { get { return magicAttack; } }
     [SerializeField]
     private float defense;
     public float Defense { get { return defense; } }
-    [SerializeField]
-    private float magicDefense;
-    public float MagicDefense { get { return magicDefense; } }
+    // [SerializeField]
+    // private float magicDefense;
+    // public float MagicDefense { get { return magicDefense; } }
     [SerializeField]
     private float speed;
     public float Speed { get { return speed; } }
     //角色阵营
     [SerializeField]
     private int camp;
+    [SerializeField]
+    private Grid grid;
+
+    
+    public virtual void Movement()
+    {
+        //移动
+    }
 }

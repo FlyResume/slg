@@ -25,4 +25,8 @@ public class MapMgr : SingletonMono<MapMgr>
         }
         ResourceMgr.Instance.LoadMaterial("Graphs_GridGraph",Map);
     }
+    public Grid GetGrid(Vector2 pos)
+    {
+        return gridsList.Find(grid => grid.pos == pos);
+    }
 }

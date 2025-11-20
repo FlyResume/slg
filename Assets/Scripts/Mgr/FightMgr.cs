@@ -12,11 +12,11 @@ public class FightMgr : SingletonMono<FightMgr>
             //物理伤害
             defender.CurrentHp -= Mathf.Max(1, damage - defender.Defense);
         }
-        else if (damageType == DamageType.Magic)
-        {
-            //魔法伤害
-            defender.CurrentHp -= Mathf.Max(1, damage - defender.MagicDefense);
-        }
+        // else if (damageType == DamageType.Magic)
+        // {
+        //     //魔法伤害
+        //     defender.CurrentHp -= Mathf.Max(1, damage - defender.MagicDefense);
+        // }
         else if (damageType == DamageType.Real)
         {
             //真实伤害
