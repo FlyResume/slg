@@ -17,6 +17,11 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: fdaf43a60e85c54449b6a770d527ccfa
   m_SerializeEntries:
+  - m_GUID: 0b414c20b9f1a1f4989a770d3c4119ab
+    m_Address: Soldier
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b95b61b3b7a6bc94c91d60e7688e00a1
     m_Address: Graphs_GridGraph
     m_ReadOnly: 0

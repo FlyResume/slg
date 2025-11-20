@@ -30,7 +30,7 @@ public class CharacterBase : MonoBehaviour
     [SerializeField]
     private int camp;
     [SerializeField]
-    private Grid grid;
+    public Grid grid;
 
     
     public virtual void Movement()

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Grid
 {
+    //实际位置
     public Vector2 pos;
     /// <summary>
     /// 创建后把相应坐标存入

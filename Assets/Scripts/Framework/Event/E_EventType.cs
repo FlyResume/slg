@@ -13,7 +13,8 @@ public enum E_EventType
     /// </summary>
     E_Test2,
     E_SetResource,
-    //生命周期事件
+    #region 游戏生命周期
+    //整个游戏生命周期事件
     //upinit 主界面
     //preinit 预加载
     //active 游戏中
@@ -39,4 +40,20 @@ public enum E_EventType
     E_ShutdownUpdate,
     E_ShutdownFixedUpdate,
     E_ShutdownExit,
+    #endregion
+    #region 战斗生命周期
+    //战斗生命周期时间
+    E_RoundStartEnter,
+    E_RoundStartUpdate,
+    E_RoundStartFixedUpdate,
+    E_RoundStartExit,
+    E_RoundDuringEnter,
+    E_RoundDuringUpdate,
+    E_RoundDuringFixedUpdate,
+    E_RoundDuringExit,
+    E_RoundEndEnter,
+    E_RoundEndUpdate,
+    E_RoundEndFixedUpdate,
+    E_RoundEndExit,
+    #endregion
 }

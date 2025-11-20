@@ -12,6 +12,10 @@ public class MapMgr : SingletonMono<MapMgr>
     private Vector2 gridSize = new Vector2(1, 1);
     [SerializeField]
     private GameObject Map;
+    public void MapInit()
+    {
+        GenerateMap();
+    }
 
     private void GenerateMap()
     {
@@ -19,10 +23,12 @@ public class MapMgr : SingletonMono<MapMgr>
         {
             for (int j = 0; j < grids.y; j++)
             {
+                //存入实际的移动格子
                 Grid grid = new Grid(new Vector2(i * gridSize.x, j * gridSize.y));
                 gridsList.Add(grid);
             }
         }
+        Debug.Log("地图生成完成");
         ResourceMgr.Instance.LoadMaterial("Graphs_GridGraph",Map);
     }
     public Grid GetGrid(Vector2 pos)
